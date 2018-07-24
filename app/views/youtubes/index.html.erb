@@ -1,0 +1,21 @@
+<% provide(:title, "Videos") %>
+<div class="center">
+　  <div class="heading">
+      <h1>Balie Callejero</h1>
+      <p>this website is for people who love dance.</p>
+      <p>you can watch your favorite dancing videos nad keep them in your acount.</p>
+    </div>
+
+<div class="videos">
+     <% @videos.each do |video| %>
+      <% snippet = video.snippet %>
+      <% thumbnails = snippet.thumbnails
+         if thumbnails %>
+      <%= link_to("/youtubes/#{video.id.video_id}") do %>
+      <%= image_tag thumbnails.high.url, :width => '300', :height => '200', :class => 'video'%>
+      <% end %>
+      <% end %>
+      <% end %>
+</div>
+</div>
+  

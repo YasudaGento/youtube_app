@@ -1,0 +1,19 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+  </div>
+  <h1>My Favorite list</h1>
+   
+   <% @favorites.each do |favorite| %>
+  <iframe width="400" height="200" src="https://www.youtube.com/embed/<%= favorite.video_id  %>?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <% end %>
+    
+ 
+ 
