@@ -9,11 +9,16 @@
     </section>
   </aside>
   </div>
+  <div class="center">
+  
   <h1>My Favorite list</h1>
-   
+  <div class="videos">
    <% @favorites.each do |favorite| %>
-  <iframe width="400" height="200" src="https://www.youtube.com/embed/<%= favorite.video_id  %>?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe width="300" height="200" src="https://www.youtube.com/embed/<%= favorite.video_id  %>?showinfo=0" frameborder="0" 
+          allow="autoplay; encrypted-media" allowfullscreen class="video col-md-3"></iframe>
     <% end %>
+  </div>
+  </div>
     
  
  

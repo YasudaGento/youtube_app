@@ -2,8 +2,8 @@
 <div class="center">
 　  <div class="heading">
       <h1>Balie Callejero</h1>
-      <p>this website is for people who love dance.</p>
-      <p>you can watch your favorite dancing videos nad keep them in your acount.</p>
+      <h2>this website is for people who love dance.</h2>
+      <ph2>you can watch at your favorite videos and keep them in your acount.</h2>
     </div>
 
 <div class="videos">
@@ -12,7 +12,7 @@
       <% thumbnails = snippet.thumbnails
          if thumbnails %>
       <%= link_to("/youtubes/#{video.id.video_id}") do %>
-      <%= image_tag thumbnails.high.url, :width => '300', :height => '200', :class => 'video'%>
+      <%= image_tag thumbnails.high.url, :width => '300', :height => '200', :class => 'video col-md-3'%>
       <% end %>
       <% end %>
       <% end %>
