@@ -1,4 +1,5 @@
 class FavoritesController < ApplicationController
+  before_action :logged_in_user
   
   def create
     @favorite=Favorite.new(user_id: current_user.id, video_id: params[:video])

@@ -68,11 +68,15 @@ p {
   }
 }
 
+.container{
+  border: solid 3px white;
+}
+
 /* header */
 
 #logo {
   float: left;
-  margin-right: 10px;
+  margin: 0 15px;
   font-size: 1.7em;
   color: white;
   letter-spacing: -1px;
@@ -84,6 +88,11 @@ p {
   }
 }
 
+.dropdown-menu{
+  background-color: black ;
+  border: solid 2px white;
+  
+}
 
 
 /* footer */
