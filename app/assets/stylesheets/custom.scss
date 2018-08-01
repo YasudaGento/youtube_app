@@ -11,6 +11,7 @@ body {
   text-shadow: 0 0 5px #0099ff, 0 0 10px #0099ff, 0 0 20px #007acc, 0 0 30px #007acc, 0 0 40px #007acc, 0 0 55px #007acc, 0 0 75px #005c99;
 }
 
+
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
@@ -73,6 +74,10 @@ p {
 }
 
 /* header */
+
+header{
+  padding-right: 8px ;
+}
 
 #logo {
   float: left;
@@ -209,6 +214,20 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
 
 /* Users index */
