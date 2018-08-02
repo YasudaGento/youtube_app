@@ -31,7 +31,7 @@ class YoutubesController < ApplicationController
   #セーブを書き込む
   
   rescue Google::APIClient::TransmissionError => e
-    puts e.result.body
+    @video_1=e.result.body 
   end
   end
   
