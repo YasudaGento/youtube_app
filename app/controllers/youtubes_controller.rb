@@ -15,7 +15,7 @@ class YoutubesController < ApplicationController
 
 
 def get_data(keyword)
-   require 'youtube.rb'#先ほど上で準備したファイルを呼ぶ
+   #require 'youtube.rb'#先ほど上で準備したファイルを呼ぶ
    opts = Trollop::options do
      opt :q, 'Search term', :type => String, :default => keyword
      opt :max_results, 'Max results', :type => :int, :default => 50
