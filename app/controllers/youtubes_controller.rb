@@ -2,7 +2,7 @@ class YoutubesController < ApplicationController
   before_action :logged_in_user, only: [:index, :show]
   
   def index
-   get_data("world+of+dance")
+   #get_data("world+of+dance")
   
   end
   
