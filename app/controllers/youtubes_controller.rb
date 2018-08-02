@@ -30,8 +30,8 @@ class YoutubesController < ApplicationController
   @videos= search_response.data.items  #Jsonの中身が多かったので必要な情報のみ受けれるようにしています。
   #セーブを書き込む
   
-  rescue Google::APIClient::TransmissionError => e
-    @video_1=e.result.body 
+  rescue #Google::APIClient::TransmissionError => e
+    @video_1="error"
   end
   end
   
