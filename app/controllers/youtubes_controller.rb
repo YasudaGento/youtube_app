@@ -44,8 +44,6 @@ class YoutubesController < ApplicationController
   end 
 
 
-def
-end
 
 
   private
