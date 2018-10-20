@@ -6,16 +6,19 @@
       <ph2>you can watch at your favorite videos and keep them in your acount.</h2>
     </div>
 
+
  <div class="videos">
      <% @videos.each do |video| %>
       <% snippet = video.snippet %>
-      <% thumbnails = snippet.thumbnails
+       <% thumbnails = snippet.thumbnails
          if thumbnails %>
-      <%= link_to("/youtubes/#{video.id.video_id}") do %>
-      <%= image_tag thumbnails.high.url, :width => '300', :height => '200', :class => 'video col-md-3'%>
+       <%= link_to("/youtubes/#{video.id.video_id}") do %>
+         <%= image_tag thumbnails.high.url, :width => '300', :height => '200', :class => 'video col-md-3'%>
+       <% end %>
       <% end %>
-      <% end %>
-      <% end %>
+     <% end %>
+      
+      
  </div>
 </div>
   

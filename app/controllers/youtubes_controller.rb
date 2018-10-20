@@ -38,7 +38,7 @@ def get_data(keyword)
     )
 
   @videos= search_response.data.items  #Jsonの中身が多かったので必要な情報のみ受けれるようにしています。
-  #セーブを書き込む
+  logger.debug(@videos)
   
   rescue Google::APIClient::TransmissionError => e
     puts e.result.body
